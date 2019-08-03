@@ -5,6 +5,7 @@ time: 2019-Aug-03 Latest CPLEX library (go to the IBM's official website for dow
 '''
  - 问题： (Mixed Integer Linear Programming)
 	 - 公司于7个地点选址投资，令地点集合为A，每个地点i有不同的投资数额b(i)，和不同的年利润c(i)，对应下表：
+
 		 i   1     2     3     4     5     6     7   
 		 A   0     1     2     3     4     5     6  
 		 b   10    8     20    5     13    22    10
