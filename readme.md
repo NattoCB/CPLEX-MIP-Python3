@@ -10,6 +10,7 @@ time: 2019-Aug-03 Latest CPLEX library (go to the IBM's official website for dow
 		 A   0     1     2     3     4     5     6  
 		 b   10    8     20    5     13    22    10
 		 c   11    9     29    9     21    31    22
+		 
 
  - 规定:
 	(1) 1,2,3 这三个点属于建设区C1  公司在其中  至 多 选 两个 投资
