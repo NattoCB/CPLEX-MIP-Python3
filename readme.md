@@ -1,6 +1,6 @@
-# simple MIP solver with IBM cplex library in Python3
-# Author: Siyu Fang (https://github.com/i493052739/) jasper.fang@qq.com
-# time: 2019-Aug-03 Latest CPLEX library (go to the IBM's official website for downloading)
+simple MIP solver with IBM cplex library in Python3
+Author: Siyu Fang (jasper.fang@qq.com)
+time: 2019-Aug-03 Latest CPLEX library (go to the IBM's official website for downloading)
 
 '''
  - 问题： (Mixed Integer Linear Programming)
