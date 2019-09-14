@@ -26,7 +26,8 @@ from docplex.mp.model import Model  #调用cplex solver
 mdl = Model(name='a sample MIP model') # 初始化模型
 
 A = [i for i in range(0, 7)] # 初始化 投资地点(A) 列表
-X = mdl.binary_var_list(A, lb=0, name='X') # 在cplex中初始化 0-1变量  X （隶属于A列表的所有地点）0-1代表投资与否
+X = mdl.binary_var_list(A, lb=0, name='X') # 在cplex中初始化 0-1变量X （隶属于A列表的所有地点）0-1代表投资与否
+										   # lb = lower bound, ub = upper bound
 
 # 设定目标函数
 b = [10,8,20,5,13,22,10] # 各地A(i) 的 设备投资 （万元）
@@ -39,8 +40,8 @@ mdl.maximize(mdl.sum(c[i]*X[i] for i in A))  # 目标函数：最大化利润
 
 # 添加约束条件
 mdl.add_constraint(mdl.sum(X[i] for i in C1) <= 2) # 1,2,3 三个点中至多选两个
-mdl.add_constraint(mdl.sum(X[i] for i in C2) >=1) # 4,5 两个点中至少选一个	 
-mdl.add_constraint(mdl.sum(X[i] for i in C3) >=1) # 6,7 两个点中至少选一个
+mdl.add_constraint(mdl.sum(X[i] for i in C2) >= 1) # 4,5 两个点中至少选一个	 
+mdl.add_constraint(mdl.sum(X[i] for i in C3) >= 1) # 6,7 两个点中至少选一个
 mdl.add_constraint(mdl.sum(b[i] * X[i] for i in A) <= 60) # 总投资<=60万
 
 sol = mdl.solve() # 求解模型
