@@ -2,7 +2,7 @@ simple MIP solver with IBM cplex library in Python3
 Author: Siyu Fang (jasper.fang@qq.com)
 time: 2019-Aug-03 Latest CPLEX library (go to the IBM's official website for downloading)
 
-'''
+
  - 问题： (Mixed Integer Linear Programming)
 	 - 公司于7个地点选址投资，令地点集合为A，每个地点i有不同的投资数额b(i)，和不同的年利润c(i)，对应下表：
 
@@ -24,4 +24,3 @@ time: 2019-Aug-03 Latest CPLEX library (go to the IBM's official website for dow
  - 目标：
 	 - 最大化利润
 
-'''
